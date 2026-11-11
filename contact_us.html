@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TravelBloom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="travel_recommendation.css">
+  <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="travel_recommendation.html">
+      <i class="fa-solid fa-earth-americas" aria-hidden="true"></i> TravelBloom
+    </a>
+    <nav class="nav-links">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="contact_us.html" class="active">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <aside class="social" aria-label="Social media">
+      <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </aside>
+
+    <section class="content contact">
+      <div class="contact-info">
+        <h1>Contact Us</h1>
+        <p>Get in touch. Questions about a destination or a booking? Send us a message and we will reply by email.</p>
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a id="contactEmail" href="mailto:contact@travelbloom.example">contact@travelbloom.example</a></p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +1 (555) 010-2030</p>
+      </div>
+
+      <form class="panel contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Submit</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

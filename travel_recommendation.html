@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="travel_recommendation.css">
+  <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+  <!-- Navbar: Home, About Us, Contact Us, search input, Search and Clear buttons -->
+  <header class="navbar">
+    <a class="brand" href="travel_recommendation.html">
+      <i class="fa-solid fa-earth-americas" aria-hidden="true"></i> TravelBloom
+    </a>
+    <nav class="nav-links">
+      <a href="travel_recommendation.html" class="active">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="contact_us.html">Contact Us</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Enter a destination or keyword" aria-label="Search destinations">
+      <button type="button" id="btnSearch">Search</button>
+      <button type="button" id="btnClear">Clear</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <aside class="social" aria-label="Social media">
+      <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </aside>
+
+    <section class="intro" id="intro">
+      <h1>Explore Dream Destination</h1>
+      <p>
+        TravelBloom helps you discover popular travel destinations through a simple, interactive interface.
+        Search for beaches, temples, countries, or a specific country name to see recommended places
+        with images and descriptions. The results are loaded dynamically from a structured JSON file,
+        giving you a quick and easy way to find and plan your next trip.
+      </p>
+      <a class="btn" href="contact_us.html">Book Now</a>
+    </section>
+
+    <section class="results" id="results" aria-live="polite"></section>
+  </main>
+</body>
+</html>
